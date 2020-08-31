@@ -1,3 +1,4 @@
+import { BaiTap3Module } from './bai-tap3/bai-tap3.module';
 
 import { FooterComponent } from './bai-tap1/footer/footer.component';
 import { SidebarComponent } from './bai-tap1/sidebar/sidebar.component';
@@ -21,6 +22,7 @@ import { BaiTap2CardListComponent } from './bai-tap2/bai-tap2-index/bai-tap2-car
 import { BaiTap2CardItemComponent } from './bai-tap2/bai-tap2-index/bai-tap2-card-list/bai-tap2-card-item/bai-tap2-card-item.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,11 +40,13 @@ import { BaiTap2CardItemComponent } from './bai-tap2/bai-tap2-index/bai-tap2-car
     BaiTap2IndexcontentComponent,
     BaiTap2CardListComponent,
     BaiTap2CardItemComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     Buoi1Module,
+    BaiTap3Module
   ],
   providers: [],
   bootstrap: [AppComponent]

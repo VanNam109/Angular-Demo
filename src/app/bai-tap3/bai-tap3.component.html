@@ -1,0 +1,10 @@
+<!-- One way binding -->
+<p>{{school}}</p>
+<input [value]='school'>
+
+<button (click)='print()'>print</button>
+
+<!-- Two way binding -->
+<h3 style="color:red">Twoway Binding</h3>
+<input type="text" [value]="name" [(ngModel)]="name">
+<p>{{name}}</p>
