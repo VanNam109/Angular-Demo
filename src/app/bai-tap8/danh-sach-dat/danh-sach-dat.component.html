@@ -1,0 +1,6 @@
+<h3>Danh sách Đặt</h3>
+<p *ngFor="let ghe of danhSachDat">
+
+    Ghế: {{ghe.soGhe}} -Giá: {{ghe.gia}}
+    <span class="text-danger" (click)="huyGhe(ghe.soGhe)">[Hủy]</span>
+</p>

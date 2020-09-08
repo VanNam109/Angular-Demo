@@ -1,0 +1,8 @@
+<h3 style="color:red">*ngFor</h3>
+
+<ng-container *ngFor="let item of danhSachNhanVien; let stt=index">
+    <div *ngIf="item.ten ==='Nam'">
+        {{stt + 1}}. {{item.ten}} - {{item.tuoi}}
+    </div>
+
+</ng-container>

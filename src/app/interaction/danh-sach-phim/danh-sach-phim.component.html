@@ -1,0 +1,19 @@
+<div class="container">
+    <h2> Danh Sách Phim</h2>
+    <div class="row">
+
+        <div *ngFor="let phim of danhSachPhim" class="col-sm-4">
+            <app-phim [chiTietPhim]="phim" (chonPhim)="xemChiTiet($event)"></app-phim>
+        </div>
+    </div>
+    <div *ngIf="phimDangChon" class="row">
+        <div class="col-sm-6">
+            <img [src]="phimDangChon.hinhAnh" alt="" width="600px" height="600px" >
+
+        </div>
+        <div class="col-sm-6">
+            <h1>Tên Phim : {{phimDangChon.tenPhim}}</h1>
+            <span>Giá : {{phimDangChon.gia}}</span>
+        </div>
+    </div>
+</div>
